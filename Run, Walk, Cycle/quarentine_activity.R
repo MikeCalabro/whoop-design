@@ -21,9 +21,9 @@ ts_full <- merge(ts_b, WALKING)
 
 autoplot(ts_full, facets = FALSE) +
   geom_hline(yintercept = 0, linetype = "dashed", color = "white") +
-  geom_vline(xintercept = as.Date("2020-04-24"), size = 100, alpha = 0.15, color = "royalblue1") +
+  geom_vline(xintercept = as.Date("2020-04-20"), size = 150, alpha = 0.15, color = "royalblue1") +
   geom_label(aes(x = as.Date("2020-02-04"), y = 85, label = "PRE QUARENTINE"), color = "#14181b") +
-  geom_label(aes(x = as.Date("2020-04-20"), y = 85, label = "DURING QUARENTINE"), color = "#14181b") +
+  geom_label(aes(x = as.Date("2020-04-18"), y = 85, label = "DURING QUARENTINE"), color = "#14181b") +
   scale_x_date(date_labels = "%m-%d", date_breaks = "2 weeks") +
   scale_y_continuous(limits = c(-100, 100), breaks = seq(-100, 100, by = 25)) +
   scale_color_manual(values = c("purple", "green", "orange")) +
