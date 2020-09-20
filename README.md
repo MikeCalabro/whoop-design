@@ -1,6 +1,6 @@
 # WHOOP Design
 
-Re-creating professional graphics with R and Python
+Re-creating professional graphics with R and (hopefully soon) Python
 
 Plots and tables modelled after WHOOP Instagram and "The Locker" posts.
 
