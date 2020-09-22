@@ -35,10 +35,10 @@ ax.plot([14.8, 14.8], [.34, .66], color="yellow", markersize=3)
 ax.plot([14.8, 14.8], [.68, 1], color="green", markersize=3)
 
 # Creates the tick labels of the right y-axis
-plt.annotate("0%", (15, 0), color="red")
-plt.annotate("33%", (15, .315), color="red")
-plt.annotate("66%", (15, .65), color="yellow")
-plt.annotate("100%", (14.9, .99), color="green")
+plt.annotate("0%", (15, 0), color="red", weight="bold")
+plt.annotate("33%", (15, .315), color="red", weight="bold")
+plt.annotate("66%", (15, .65), color="yellow", weight="bold")
+plt.annotate("100%", (14.9, .99), color="green", weight="bold")
 
 # Creates the left y-axis
 ax.plot([5.8, 5.8], [0, .15], color="#4b6cc8")
@@ -49,13 +49,13 @@ ax.plot([5.8, 5.8], [.67, .82], color="#4b6cc8")
 ax.plot([5.8, 5.8], [.84, .99], color="#4b6cc8")
 
 # Creates the tick labels of the left y-axis
-plt.annotate(0, (6, 0), color="#4b6cc8")
-plt.annotate(6, (6, .15), color="#4b6cc8")
-plt.annotate(10, (6, .32), color="#4b6cc8")
-plt.annotate(12, (6, .485), color="#4b6cc8")
-plt.annotate(14, (6, .65), color="#4b6cc8")
-plt.annotate(16, (6, .82), color="#4b6cc8")
-plt.annotate(21, (6, .99), color="#4b6cc8")
+plt.annotate(0, (6, 0), color="#4b6cc8", weight="bold")
+plt.annotate(6, (6, .15), color="#4b6cc8", weight="bold")
+plt.annotate(10, (6, .32), color="#4b6cc8", weight="bold")
+plt.annotate(12, (6, .485), color="#4b6cc8", weight="bold")
+plt.annotate(14, (6, .65), color="#4b6cc8", weight="bold")
+plt.annotate(16, (6, .82), color="#4b6cc8", weight="bold")
+plt.annotate(21, (6, .99), color="#4b6cc8", weight="bold")
 
 # Removes the box that surrounds the plot (pre-set axes)
 ax.spines["right"].set_color("black")
@@ -75,23 +75,23 @@ ax.get_yaxis().set_visible(False)
 
 # Sets the x-axis labels
 plt.xticks((7, 8, 9, 10, 11, 12, 13, 14), ("MON\n7", "TUES\n8", "WED\n9", "THU\n10",
-                                           "FRI\n11", "SAT\n12", "SUN\n13", "MON\n14"))
+                                           "FRI\n11", "SAT\n12", "SUN\n13", "MON\n14"), fontweight="bold")
 
 # Labels all but the last set of points on the plot (all but "MON 14" points)
 for i in range(0, 7):
-    plt.annotate(strain[i], (x[i] - 0.2, strain_loc[i] + 0.05), color="#4b6cc8")
+    plt.annotate(strain[i], (x[i] - 0.2, strain_loc[i] + 0.05), color="#4b6cc8", weight="bold")
     if recovery[i] > 0.66:
-        plt.annotate("{:.0%}".format(recovery[i]), (x[i] - 0.25, recovery[i] - 0.07), color="green")
+        plt.annotate("{:.0%}".format(recovery[i]), (x[i] - 0.25, recovery[i] - 0.07), color="green", weight="bold")
     else:
-        plt.annotate("{:.0%}".format(recovery[i]), (x[i] - 0.25, recovery[i] - 0.07), color="yellow")
+        plt.annotate("{:.0%}".format(recovery[i]), (x[i] - 0.25, recovery[i] - 0.07), color="yellow", weight="bold")
 
 # Labels the last points ("MON 14")
-plt.annotate(strain[7], (x[7] - 0.25, strain_loc[7] - 0.07), color="#4b6cc8")
-plt.annotate("{:.0%}".format(recovery[7]), (x[7] - 0.2, recovery[7] + 0.05), color="green")
+plt.annotate(strain[7], (x[7] - 0.25, strain_loc[7] - 0.07), color="#4b6cc8", weight="bold")
+plt.annotate("{:.0%}".format(recovery[7]), (x[7] - 0.2, recovery[7] + 0.05), color="green", weight="bold")
 
 # Sets title and supplementary title
-plt.title("WEEK 2")
-plt.suptitle("TEAM EF - STRAIN V. RECOVERY")
+plt.title("WEEK 2", fontweight="bold")
+plt.suptitle("TEAM EF - STRAIN V. RECOVERY", fontweight="bold")
 
 # Prints the plot!
 plt.show()
