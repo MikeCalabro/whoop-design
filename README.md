@@ -4,15 +4,15 @@ Re-creating professional graphics with R and (hopefully soon) Python
 
 Plots and tables modelled after WHOOP Instagram and "The Locker" posts.
 
-### Example 1 - Using R
-
-![](https://raw.githubusercontent.com/MikeCalabro/whoop-design/master/Strain%20v.%20Recovery/strain_v_recovery_R.png)
-
 ### Example 1 - Using Python
 
 ![](https://raw.githubusercontent.com/MikeCalabro/whoop-design/master/Strain%20v.%20Recovery/strain_recovery_python.png)
 
 Based on [this post](https://www.instagram.com/p/CFLAyl0Bqk3/)
+
+### Example 1 - Using R
+
+![](https://raw.githubusercontent.com/MikeCalabro/whoop-design/master/Strain%20v.%20Recovery/strain_v_recovery_R.png)
 
 ### Example 2 - Using R
 
